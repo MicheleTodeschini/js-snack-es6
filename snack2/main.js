@@ -30,9 +30,14 @@ const squadre = [
 for (let i = 0; i < squadre.length; i++) {
     if (squadre[i].punti == 0) {
         squadre[i].punti = Math.floor(Math.random() * 100);
-        console.log(squadre[i]);
-
     }
-
+}
+for (let i = 0; i < squadre.length; i++) {
+    if (squadre[i].falliSubiti == 0) {
+        squadre[i].falliSubiti = Math.floor(Math.random() * 100);
+    }
 }
 
+
+
+console.log(squadre);
