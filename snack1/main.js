@@ -11,6 +11,7 @@ console.log('funzia');
 
 const biciEl = document.getElementById('bici')
 
+
 const biciclette = [{
     nome: 'Bianchi',
     peso: 10
@@ -25,4 +26,10 @@ const biciclette = [{
 }
 ]
 
-console.log(biciclette);
+let biciLeggera = biciclette[0]
+
+for (let i = 0; i < biciclette.length; i++)
+    if (biciclette[i].peso < biciLeggera.peso) {
+        biciLeggera = biciclette[i]
+    }
+console.log(biciLeggera.nome);
