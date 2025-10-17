@@ -30,27 +30,36 @@ const squadre = [
 for (let i = 0; i < squadre.length; i++) {
     if (squadre[i].punti == 0) {
         squadre[i].punti = Math.floor(Math.random() * 100);
+    } if (squadre[i].falliSubiti == 0) {
+        squadre[i].falliSubiti = Math.floor(Math.random() * 100);
     }
 }
+/*
 for (let i = 0; i < squadre.length; i++) {
     if (squadre[i].falliSubiti == 0) {
         squadre[i].falliSubiti = Math.floor(Math.random() * 100);
     }
 }
 
-
+*/
 
 console.log(squadre);
 
-let nameFoul = squadre
+let nameFoul = []
 
 
-//nameFoul.punti.splice(0)
-//console.log(nameFoul);
+for (let i = 0; i < squadre.length; i++) {
 
-for (let i = 0; i < nameFoul.length; i++) {
-    if (nameFoul.punti >= 0) {
+    //const numeroBuffo = i + 1
+    const squadra = {
+        nome: squadre[i].nome,
+        falliSubiti: squadre[i].falliSubiti,
 
     }
+    nameFoul.push(squadra)
+    console.log(nameFoul);
+
 }
-console.log(nameFoul);
+
+
+

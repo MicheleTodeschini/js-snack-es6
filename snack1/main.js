@@ -31,7 +31,7 @@ let biciLeggera = biciclette[0]
 for (let i = 1; i < biciclette.length; i++)
     if (biciclette[i].peso < biciLeggera.peso) {
         biciLeggera = biciclette[i]
-        biciEl.innerHTML = `la più leggera è ${biciLeggera}`
+        biciEl.innerHTML = `la più leggera è ${biciLeggera.nome}`
     }
 console.log(biciLeggera.nome);
 
