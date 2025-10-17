@@ -41,3 +41,16 @@ for (let i = 0; i < squadre.length; i++) {
 
 
 console.log(squadre);
+
+let nameFoul = squadre
+
+
+//nameFoul.punti.splice(0)
+//console.log(nameFoul);
+
+for (let i = 0; i < nameFoul.length; i++) {
+    if (nameFoul.punti >= 0) {
+
+    }
+}
+console.log(nameFoul);
