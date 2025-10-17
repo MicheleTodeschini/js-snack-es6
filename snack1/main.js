@@ -31,5 +31,9 @@ let biciLeggera = biciclette[0]
 for (let i = 0; i < biciclette.length; i++)
     if (biciclette[i].peso < biciLeggera.peso) {
         biciLeggera = biciclette[i]
+        biciEl.innerHTML = `la più leggera è ${biciLeggera}`
     }
 console.log(biciLeggera.nome);
+
+console.log(Math.min(Number(biciclette.peso)))
+
