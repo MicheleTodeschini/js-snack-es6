@@ -25,3 +25,14 @@ const squadre = [
         falliSubiti: 0
     },
 ]
+
+
+for (let i = 0; i < squadre.length; i++) {
+    if (squadre[i].punti = 0) {
+        squadre[i].punti = Math.floor(Math.random() * 100);
+        console.log(squadre[i]);
+
+    }
+
+}
+
