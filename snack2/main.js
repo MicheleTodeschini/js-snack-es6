@@ -8,6 +8,8 @@ Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “
 Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 */
 
+
+// creo array di oggetti
 const squadre = [
     {
         nome: 'Milan',
@@ -25,8 +27,7 @@ const squadre = [
         falliSubiti: 0
     },
 ]
-
-
+//creo for che confronta i punti e i falli di tutte le squadre e se sono pari a 0, genera dei numeri random e li inserisce al posto dello 0
 for (let i = 0; i < squadre.length; i++) {
     if (squadre[i].punti == 0) {
         squadre[i].punti = Math.floor(Math.random() * 100);
@@ -34,6 +35,8 @@ for (let i = 0; i < squadre.length; i++) {
         squadre[i].falliSubiti = Math.floor(Math.random() * 100);
     }
 }
+
+// commento via il for sottostante in modo da avere tutto in un ciclo unico e non due for separati
 /*
 for (let i = 0; i < squadre.length; i++) {
     if (squadre[i].falliSubiti == 0) {
@@ -46,15 +49,11 @@ for (let i = 0; i < squadre.length; i++) {
 console.log(squadre);
 
 let nameFoul = []
-
-
+// creo squadra singola e poi la pusho nella squadra nameFoul
 for (let i = 0; i < squadre.length; i++) {
-
-    //const numeroBuffo = i + 1
     const squadra = {
         nome: squadre[i].nome,
         falliSubiti: squadre[i].falliSubiti,
-
     }
     nameFoul.push(squadra)
     console.log(nameFoul);
